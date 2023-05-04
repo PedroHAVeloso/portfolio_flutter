@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_web_plugins/flutter_web_plugins.dart';
 import 'package:website/constants/app_settings.dart';
 import 'package:website/pages/home/home_page.dart';
+import 'package:website/pages/knowledge/knowledge_page.dart';
 
 void main() {
   usePathUrlStrategy();
@@ -20,6 +21,7 @@ class AppWidget extends StatelessWidget {
       ),
       routes: {
         '/home': (context) => const HomePage(),
+        '/knowledge': (context) => const KnowledgePage(),
       },
       initialRoute: '/home',
     );
